@@ -33,7 +33,7 @@ class ProfileScreen extends StatelessWidget{
         drawer: Drawer(
           child: ListView(
             children: [
-              const DrawerHeader(child: Text("Header")),
+              const DrawerHeader(child: Text("Drawer Header")),
               ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Page 01"),
@@ -72,7 +72,7 @@ class ProfileScreen extends StatelessWidget{
         ]),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Colors.amber,
+          backgroundColor: Colors.orange,
           onPressed: () {  },
         ),
         bottomNavigationBar: BottomNavigationBar(

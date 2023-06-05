@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         drawer: Drawer(
           child: ListView(
             children: [
-              const DrawerHeader(child: Text("Header")),
+              const DrawerHeader(child: Text("Drawer Header")),
               ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Page 01"),
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         ]),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Colors.purpleAccent,
+          backgroundColor: Colors.green,
           onPressed: () {  },
         ),
         bottomNavigationBar: BottomNavigationBar(

@@ -33,7 +33,7 @@ class ContactScreen extends StatelessWidget{
         drawer: Drawer(
           child: ListView(
             children: [
-              const DrawerHeader(child: Text("Header")),
+              const DrawerHeader(child: Text("Drawer Header")),
               ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Page 01"),
@@ -72,7 +72,7 @@ class ContactScreen extends StatelessWidget{
         ]),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.blue,
           onPressed: () {  },
         ),
         bottomNavigationBar: BottomNavigationBar(
