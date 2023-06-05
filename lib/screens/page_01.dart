@@ -28,12 +28,12 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                 text: "Home",
               ),
               Tab(
-                icon: Icon(Icons.account_box_outlined),
-                text: "Account",
+                icon: Icon(Icons.contact_mail),
+                text: "Contact",
               ),
               Tab(
-                icon: Icon(Icons.alarm),
-                text: "Alarm",
+                icon: Icon(Icons.person),
+                text: "Profile",
               ),
             ],
           ),
