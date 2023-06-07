@@ -3,14 +3,8 @@ import 'package:assignment05/screens/page_02.dart';
 import 'package:assignment05/screens/page_03.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget{
+class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin{
 
   @override
 
