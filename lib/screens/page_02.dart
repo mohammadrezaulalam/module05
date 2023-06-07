@@ -3,6 +3,8 @@ import 'package:assignment05/screens/page_03.dart';
 import 'package:flutter/material.dart';
 
 class ContactScreen extends StatelessWidget{
+  const ContactScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -35,24 +37,24 @@ class ContactScreen extends StatelessWidget{
             children: [
               const DrawerHeader(child: Text("Drawer Header")),
               ListTile(
-                leading: Icon(Icons.home),
-                title: Text("Page 01"),
+                leading: const Icon(Icons.home),
+                title: const Text("Page 01"),
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
                 },
               ),
               ListTile(
-                leading: Icon(Icons.contact_mail),
-                title: Text("Page 02"),
+                leading: const Icon(Icons.contact_mail),
+                title: const Text("Page 02"),
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => ContactScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactScreen()));
                 },
               ),
               ListTile(
-                leading: Icon(Icons.person),
-                title: Text("Page 03"),
+                leading: const Icon(Icons.person),
+                title: const Text("Page 03"),
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfileScreen()));
                 },
               ),
 
@@ -71,9 +73,10 @@ class ContactScreen extends StatelessWidget{
           ),
         ]),
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
+
           backgroundColor: Colors.blue,
           onPressed: () {  },
+          child: const Icon(Icons.add),
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: 1,
@@ -84,13 +87,13 @@ class ContactScreen extends StatelessWidget{
           ],
           onTap: (int index){
             if(index == 0){
-              Navigator.push(context,  MaterialPageRoute(builder: (context) => HomeScreen()));
+              Navigator.push(context,  MaterialPageRoute(builder: (context) => const HomeScreen()));
             }
             if(index == 1){
-              Navigator.push(context,  MaterialPageRoute(builder: (context) => ContactScreen()));
+              Navigator.push(context,  MaterialPageRoute(builder: (context) => const ContactScreen()));
             }
             if(index == 2){
-              Navigator.push(context,  MaterialPageRoute(builder: (context) => ProfileScreen()));
+              Navigator.push(context,  MaterialPageRoute(builder: (context) => const ProfileScreen()));
             }
           },
         ),
